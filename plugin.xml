@@ -25,11 +25,6 @@
 						>
         		</activity>
 			</config-file>
-			<config-file target="AndroidManifest.xml" parent="/manifest">
-				<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-				<uses-permission android:name="android.permission.CAMERA" />
-					
-        </config-file>
 		
 		<source-file src="src/com/print/BasePrint.java" target-dir="src/com/print/"/>
 		<source-file src="src/com/print/Common.java" target-dir="src/com/print/"/>
@@ -41,9 +36,9 @@
 		<source-file src="src/com/print/PrinterPreference.java" target-dir="src/com/print/"/>
 		<source-file src="src/com/print/PrintFunctions.java" target-dir="src/com/print/"/>
 
-        <source-file src="src/libs/BrotherPrintLibrary.jar" target-dir="src/libs/"/>
-        <source-file src="src/libs/MobilePrintLib.jar" target-dir="src/libs/"/>
-
+        <source-file src="src/libs/BrotherPrintLibrary.jar" target-dir="libs" framework="true" />
+        <source-file src="src/libs/MobilePrintLib.jar" target-dir="libs" framework="true" />
+		
 
         <source-file src="src/res/values/strings.xml" target-dir="src/res/values"/>
         <source-file src="src/res/values/styles.xml" target-dir="src/res/values"/>
