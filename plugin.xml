@@ -38,6 +38,7 @@
 		<source-file src="src/com/print/PrinterModelInfo.java" target-dir="src/com/print/"/>
 		<source-file src="src/com/print/PrinterPreference.java" target-dir="src/com/print/"/>
 		<source-file src="src/com/print/PrintFunctions.java" target-dir="src/com/print/"/>
+		<source-file src="src/com/printPlugin/R.java" target-dir="src/com/printPlugin/"/>
 
         <source-file src="src/libs/BrotherPrintLibrary.jar" target-dir="libs" framework="true" />
         <source-file src="src/libs/MobilePrintLib.jar" target-dir="libs" framework="true" />
