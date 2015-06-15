@@ -17,6 +17,9 @@
 				<feature name="Print">
 					<param name="android-package" value="com.print.Print"/>
 				</feature>
+				<feature name="org.apache.commons.net">
+                	<param name="android-package" value="com.brother.ptouch.sdk"/>
+           		</feature>
 			</config-file>
 			<config-file target="AndroidManifest.xml" parent="/manifest/application">
 				<activity
