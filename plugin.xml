@@ -45,6 +45,8 @@
 
         <source-file src="src/libs/BrotherPrintLibrary.jar" target-dir="libs" framework="true" />
         <source-file src="src/libs/MobilePrintLib.jar" target-dir="libs" framework="true" />
+		<source-file src="src/libs/cordova-2.2.0.jar" target-dir="libs" framework="true" />
+
 		
 
         <source-file src="src/res/values/strings.xml" target-dir="src/res/values"/>
