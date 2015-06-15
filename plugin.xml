@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+            id="com.printPlugin" version="1.0">
+        <name>PrintPlugin</name>
+		<engines>
+  		  <engine name="cordova" version=">=3.4.0"/>
+ 	 	</engines>
+
+        <description>Cordova Print Plugin</description>
+        <license>Apache 2.0</license>
+        <keywords>cordova</keywords>
+        <js-module src="www/print.js" name="print">
+            <clobbers target="print" />
+        </js-module>
+        <platform name="android">
+			<config-file target="config.xml" parent="/*">
+				<feature name="Print">
+					<param name="android-package" value="com.print.Print"/>
+				</feature>
+			</config-file>
+			<config-file target="AndroidManifest.xml" parent="/manifest/application">
+				<activity
+						android:name="com.print.Print"
+						android:label="@string/app_name"
+						>
+        		</activity>
+			</config-file>
+			<config-file target="AndroidManifest.xml" parent="/manifest">
+				<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+				<uses-permission android:name="android.permission.CAMERA" />
+					
+        </config-file>
+		
+		<source-file src="src/com/print/BasePrint.java" target-dir="src/com/print/"/>
+		<source-file src="src/com/print/Common.java" target-dir="src/com/print/"/>
+		<source-file src="src/com/print/ImagePrint.java" target-dir="src/com/print/"/>
+		<source-file src="src/com/print/MsgDialog.java" target-dir="src/com/print/"/>
+		<source-file src="src/com/print/MsgHandle.java" target-dir="src/com/print/"/>
+		<source-file src="src/com/print/Print.java" target-dir="src/com/print/"/>
+		<source-file src="src/com/print/PrinterModelInfo.java" target-dir="src/com/print/"/>
+		<source-file src="src/com/print/PrinterPreference.java" target-dir="src/com/print/"/>
+		<source-file src="src/com/print/PrintFunctions.java" target-dir="src/com/print/"/>
+
+        <source-file src="src/libs/BrotherPrintLibrary.jar" target-dir="src/libs/"/>
+        <source-file src="src/libs/MobilePrintLib.jar" target-dir="src/libs/"/>
+
+
+        <source-file src="src/res/values/strings.xml" target-dir="src/res/values"/>
+        <source-file src="src/res/values/styles.xml" target-dir="src/res/values"/>
+
+    	</platform>
+    </plugin>
