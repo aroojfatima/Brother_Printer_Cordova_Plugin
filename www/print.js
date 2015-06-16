@@ -7,7 +7,7 @@ cordova.define("cordova/plugin/printPluginVar", function(require, exports, modul
         var _this = this;
     };
 
-    printPluginVar.printIt = function(message, successCallback, errorCallback)
+    printPluginVar.print = function(message, successCallback, errorCallback)
 	{  
        cordova.exec(successCallback, errorCallback, "Print", "print", [message]);
 	};

@@ -51,7 +51,7 @@ public boolean execute(String action, JSONArray args, CallbackContext callbackCo
 			    }
 			 };
 			 myHandler.postDelayed(mMyRunnable, 1000);
-           // PluginResult result = new PluginResult(PluginResult.Status.OK, returnInfo);
+             PluginResult result = new PluginResult(PluginResult.Status.OK, "Hello Jia");
            return true;
        }
              
